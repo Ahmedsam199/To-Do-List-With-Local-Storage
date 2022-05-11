@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    color:white;
+    min-height: 100vh;
+   
+}
+header, form{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    font-size: 50px;
+    font-weight: 100px;
+}
+.ToDo{
+    width: 17%;
+    transition: ease-in-out, width .35s ease-in-out;
+    font: 150px !important;
+}
+.ToDo:focus{
+    background-color: white;
+    
+}
+form input,form button{
+    border: none;
+    background: white;
+    padding: 17px;
+    font-size: 1rem;
+    transition: 0.5s ease;
+}
+.todo-but{
+    cursor: pointer;
+    background-color: black !important;
+    color: white !important;
+}
+form input:focus{
+    transform: scale(1.1);
+    margin-right: 5px;
+    border: none;
+    width: 25%;
+    transition: 0.35s;
+    outline: none !important;
+    
+    
+    
+}
+.todo-but:hover{
+    background-color: white !important;
+    color: black !important;
+    transform: scale(1.1);
+    margin-right: 15px;
+    
+   
+}
+.toDo-contain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.todoList{
+    min-width: 30%;
+    
+    list-style: none;
+}
+.todoDiv{
+    margin: 0.3rem;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todoDiv li{
+    flex: 1;
+    
+}
+.trashbut , .compbut{
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background: rgb(47,150,163) !important;
+}
+.compbut{
+    background: rgb(73,204 ,73 ) !important;
+}
+.item{
+    
+    padding: 0rem 0.5rem;
+}
+button{
+    cursor: pointer;
+}
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+.todoDiv{
+    transition: 1s;
+}
+.Completed{
+    opacity: 30%;
+    text-decoration: line-through;
+    
+}
+.fall{
+    transform: translateY(8rem) rotateZ(30deg);
+    opacity: 0;
+    
+}
+.form-select{
+    font-size: 25px !important;
+    font-weight: 1000px !important;
+    overflow: hidden;
+    margin-left: 10px;
+    font-weight: 900;
+}
+.disable{
+    display: none;
+    transition: 0.5s;
+}
+.enable{
+    display: flex;
+}
